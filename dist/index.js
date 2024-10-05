@@ -13,7 +13,7 @@ app.use((0, helmet_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
-    res.send("Test");
+    res.send("Test ok");
 });
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

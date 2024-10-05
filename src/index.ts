@@ -2,6 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import helmet from "helmet";
 import dotenv from "dotenv";
 
+
 dotenv.config();
 
 const app = express();
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    res.send("Test");
+    res.send("Test ok");
 });
 
 app.listen(PORT, () => {
